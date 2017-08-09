@@ -1,0 +1,21 @@
+{
+  "name": "pag",
+  "version": "1.0.0",
+  "description": "Primerro contato com o nodeJs",
+  "main": "first.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "NodeJS",
+    "JS."
+  ],
+  "author": "Batuta",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "mysql": "^2.14.1"
+  }
+}
