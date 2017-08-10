@@ -9,6 +9,10 @@ rotaAddProduto(app);
 var rotaProdutos = require('./app/routes/produtos');
 rotaProdutos(app);
 
+var rotaClientes = require('./app/routes/clientes');
+rotaClientes(app);
+
+
 
 //Modo Simples passando o html inline direto.
 app.get('/',function(req, res){

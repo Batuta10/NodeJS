@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>NodeJs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.0/css/bulma.min.css">
+	</head>
+	<body>
+		<header class="nav">
+			<div class="container is-fluid">
+				<div class="nav-left">
+					<a class="nav-item">
+					<img src="https://userscontent2.emaze.com/images/325b6b4d-3013-441f-8ae0-ae84a94270e3/0fd5b3563e383776f56fd3eff31256ca.png" alt="Logo">
+					</a>
+				</div>
+				<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+				</span>
+				<div class="nav-right nav-menu">
+					<a class="nav-item" href="/">Home</a>
+					<a class="nav-item" href="/addProduto">Cadastrar</a>
+					<a class="nav-item is-active" href="/produtos">Produtos</a>
+				</div>
+			</div>
+		</header>
+		<section class="section">
+			<div class="container is-fluid">
+				<h2 class="title is-2">Clientes</h2>
+				<table class="table is-striped is-fullwidth">
+				  <thead>
+				    <tr>
+				      <th><abbr title="Id">Id</abbr></th>
+				      <th><abbr title="Nome">Nome</abbr></th>
+				      <th><abbr title="Sobrenome">Sobrenome</abbr></th>
+							<th><abbr title="CEP">CEP</abbr></th>
+							<th><abbr title="Endereço">Endereço</abbr></th>
+							<th><abbr title="CPF">CPF</abbr></th>
+				      <th><abbr title="Ação">Ação</abbr></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+						<% for(var i = 0; i < clientes.length; i++){ %>
+				    <tr>
+				      <td><%= clientes[i].id_clientes %></td>
+				      <td><%= clientes[i].nome %></td>
+				      <td><%= clientes[i].sobrenome %></td>
+                      <td><%= clientes[i].cep %></td>
+                      <td><%= clientes[i].endereco %></td>
+                      <td><%= clientes[i].cpf %></td>
+				      <td><a class="delete is-medium"></a></td>
+						</tr>
+						<% } %>
+				  </tbody>
+				</table>
+			</div>
+		</section>
+	</body>
+</html>
