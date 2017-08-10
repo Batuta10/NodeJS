@@ -32,5 +32,5 @@ app.get('/tabuada',function(req, res){
 
 //Server e Porta
 app.listen(3000, function() {
-  console.log('\nRunner - Server ON');
+  console.log('\nRunner - Server ON\n');
 });

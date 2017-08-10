@@ -34,27 +34,20 @@
 				  <thead>
 				    <tr>
 				      <th><abbr title="Id">Id</abbr></th>
-				      <th>Nome</th>
-				      <th><abbr title="Quantidade">Quantidade</abbr></th>
-				      <th><abbr title="Validade">Validade</abbr></th>
+				      <th><abbr title="Nome">Nome</abbr></th>
+				      <th><abbr title="Descrição">Descrição</abbr></th>
 				      <th><abbr title="Ação">Ação</abbr></th>
 				    </tr>
 				  </thead>
 				  <tbody>
+						<% for(var i = 0; i < produtos.length; i++){ %>
 				    <tr>
-				      <th>1</th>
-				      <td>Banana</td>
-				      <td>150</td>
-				      <td>23/08/2017</td>
+				      <th><%= produtos[i].id_produtos %></th>
+				      <td><%= produtos[i].nome %></td>
+				      <td><%= produtos[i].descricao %></td>
 				      <td><a class="delete is-medium"></a></td>
-				    </tr>
-				    <tr>
-				      <th>2</th>
-				      <td>Morango</td>
-				      <td>200</td>
-				      <td>30/08/2017</td>
-				      <td><a class="delete is-medium"></a></td>
-				    </tr>
+						</tr>
+						<% } %>
 				  </tbody>
 				</table>
 			</div>
