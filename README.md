@@ -9,7 +9,7 @@ Application in NodeJS with Exprees.
 - [MySQL](https://www.mysql.com/products/workbench/)
 
 ## Me
-    My name is **Gabriel Costa**, from **Brazil**, this is my application that was developed in the classes of my university.
+My name is **Gabriel Costa**, from **Brazil**, this is my application that was developed in the classes of my university.
 
 ### Installation
 
