@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `db_produtos` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `db_produtos`;
 -- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
 --
 -- Host: localhost    Database: db_produtos
@@ -29,7 +27,7 @@ CREATE TABLE `produtos` (
   `nome` varchar(45) DEFAULT NULL,
   `descricao` varchar(150) DEFAULT NULL,
   PRIMARY KEY (`id_produtos`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +36,7 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES (1,'Alface','Alface lisa'),(2,'Alface','Alface lisa');
+INSERT INTO `produtos` VALUES (1,'Alface','Alface lisa'),(2,'Tomate','Tomate Pomodoro'),(3,'Maça','Maça Monica'),(4,'Abacaxi','Natural');
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-08-10 11:39:40
+-- Dump completed on 2017-08-11  8:54:33
