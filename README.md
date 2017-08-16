@@ -4,6 +4,7 @@ Application in NodeJS with Exprees.
 
 - [NodeJS](https://nodejs.org/)
 - [Express](http://expressjs.com/)
+-[Consign](https://www.npmjs.com/package/consign)
 
 - [Nodemon](https://nodemon.io/)
 - [MySQL](https://www.mysql.com/products/workbench/)
