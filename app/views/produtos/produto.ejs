@@ -8,17 +8,17 @@
 				<tr>
 					<th><abbr title="Id">Id</abbr></th>
 					<th><abbr title="Nome">Nome</abbr></th>
+					<th><abbr title="Descrição">Descrição</abbr></th>
 					<th><abbr title="Ação">Ação</abbr></th>
 				</tr>
 			</thead>
 			<tbody>
-				<% for(var i = 0; i < produtos.length; i++){ %>
 				<tr>
-					<th><%= produtos[i].id_produtos %></th>
-					<td><%= produtos[i].nome %></td>
+					<th><%= produtos[0].id_produtos %></th>
+					<td><%= produtos[0].nome %></td>
+					<td><%= produtos[0].descricao %></td>
 					<td><a class="delete is-medium"></a></td>
 				</tr>
-				<% } %>
 			</tbody>
 		</table>
 	</div>

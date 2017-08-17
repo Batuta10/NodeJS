@@ -4,7 +4,7 @@
 module.exports = function(app){
     app.get('/clientes',function(req, res){
         
-        var connection = app.config.dbConnection();
+        var connection = app.config.db();
 
         connection.query('SELECT * FROM clientes',(error,result)=>{
             res.render('clientes/clientes',{clientes: result});
