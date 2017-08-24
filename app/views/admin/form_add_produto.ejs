@@ -3,17 +3,17 @@
 <section class="section">
 	<div class="container is-fluid">
 		<h2 class="title is-2">Add Produtos</h2>
-		<form method="" action="">
+		<form method="post" action="/produtos/salvar">
 			<div class="field">
 				<label for="nome" class="label" >Nome</label>
 				<input class="input" type="text" name="nome" id="nome"/>
 			</div>
 			<div class="field">
-				<label for="qtd" class="label">Quantidade</label>
-				<input class="input" type="number" name="qtd" id="qtd" />
+				<label for="descrição" class="label">Descrição</label>
+				<input class="input" type="text" name="descrição" id="descrição" />
 			</div>
 			<div>
-				<input class="button is-primary" type="submit" name="envia" value="Cadastrar" />
+				<input class="button is-primary" type="submit" name="cadastrar" value="Cadastrar" />
 			</div>
 		</form>
 	</div>
