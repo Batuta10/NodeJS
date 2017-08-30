@@ -1,0 +1,33 @@
+<% include ../includes/header %>
+<% include ../includes/nav %>
+<section class="section">
+	<div class="container is-fluid">
+		<h2 class="title is-2">Add Cliente</h2>
+		<form method="post" action="/clientes/salvar">
+			<div class="field">
+				<label for="nome" class="label" >Nome</label>
+				<input class="input" type="text" name="nome" id="nome"/>
+			</div>
+			<div class="field">
+				<label for="Sobrenome" class="label" >Sobrenome</label>
+				<input class="input" type="text" name="sobrenome" id="Sobrenome"/>
+			</div>
+			<div class="field">
+				<label for="CEP" class="label" >CEP</label>
+				<input class="input" type="number" name="cep" id="CEP"/>
+			</div>
+			<div class="field">
+				<label for="Endereço" class="label" >Endereço</label>
+				<input class="input" type="text" name="endereco" id="Endereço"/>
+			</div>
+			<div class="field">
+				<label for="CPF" class="label">CPF</label>
+				<input class="input" type="text" name="cpf" id="CPF" />
+			</div>
+			<div>
+				<input class="button is-primary" type="submit" value="Cadastrar" />
+			</div>
+		</form>
+	</div>
+</section>
+<% include ../includes/footer %>
