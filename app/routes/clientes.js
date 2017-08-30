@@ -3,12 +3,11 @@
 
 module.exports = function(app){
     app.get('/clientes',function(req, res){
-        
         var connection = app.config.db();
-
-        connection.query('SELECT * FROM clientes',(error,result)=>{
-            res.render('clientes/clientes',{clientes: result});
-            console.log('Consuta no Banco Realizada');
-        });
+        var clientesModel = app.app.models.clientesModel;
+    
+        clientesModel.getClientes(connection,(error,result)=>{
+            res.render('clientes/clientes', {clientes: result});
+        }); 
     });
 };
