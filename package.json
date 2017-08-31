@@ -9,7 +9,13 @@
   "keywords": [
     "node",
     "NodeJS",
-    "JS."
+    "JS",
+    "Express",
+    "Consign",
+    "MySQL",
+    "BodyParser",
+    "NodeMon",
+    "ejs"
   ],
   "author": "Batuta",
   "license": "ISC",
