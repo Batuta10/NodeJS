@@ -1,6 +1,6 @@
 # NodeJs
 
-Application in NodeJS with Exprees.
+Application in NodeJS with:
 
 - [NodeJS](https://nodejs.org/)
 - [Express](http://expressjs.com/)
