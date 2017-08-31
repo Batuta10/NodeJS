@@ -7,9 +7,9 @@ module.exports = function(app){
         var cliente = req.body;
 
         var connection = app.config.db();
-        var clientesModel = app.app.models.clientesModel;
+        var clientesModel = new app.app.models.clientesDAO(connection);
     
-        clientesModel.addCliente(cliente, connection,(error,result)=>{
+        clientesModel.addCliente(cliente, (error,result)=>{
             res.redirect('/clientes');
         });
     });

@@ -6,9 +6,9 @@ module.exports = function(app){
         var produto = req.body;
 
         var connection = app.config.db();
-        var produtosModel = app.app.models.produtosModel;
+        var produtosModel = new app.app.models.produtosDAO(connection);
     
-        produtosModel.addProduto(produto, connection,(error,result)=>{
+        produtosModel.addProduto(produto, (error,result)=>{
             //res.render('produtos/produtos',{produtos: result});
             res.redirect('/produtos');
         });

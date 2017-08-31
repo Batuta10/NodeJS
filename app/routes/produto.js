@@ -1,9 +1,9 @@
 module.exports = function(app){
     app.get('/produto',function(req, res){
         var connection = app.config.db();
-        var produtosModel = app.app.models.produtosModel;
+        var produtosModel = new app.app.models.produtosDAO(connection);
 
-        produtosModel.getProdutos(connection,(error,result)=>{
+        produtosModel.getProdutos((error,result)=>{
             res.render('produtos/produto',{produtos: result});
         });
     });

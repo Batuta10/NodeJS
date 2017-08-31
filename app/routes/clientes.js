@@ -4,9 +4,9 @@
 module.exports = function(app){
     app.get('/clientes',function(req, res){
         var connection = app.config.db();
-        var clientesModel = app.app.models.clientesModel;
+        var clientesModel = new app.app.models.clientesDAO(connection);
     
-        clientesModel.getClientes(connection,(error,result)=>{
+        clientesModel.getClientes((error,result)=>{
             res.render('clientes/clientes', {clientes: result});
         }); 
     });
