@@ -3,26 +3,37 @@
 <section class="section">
 	<div class="container is-fluid">
 		<h2 class="title is-2">Add Cliente</h2>
+		<% if(validacao) { %>
+			<ul>
+				<% for (var i = 0; i < validacao.length; i++) { %>
+					<li><%= validacao[i].msg  %></li>
+				<% } %>
+			</ul>
+		<% } %>
 		<form method="post" action="/clientes/salvar">
 			<div class="field">
 				<label for="nome" class="label" >Nome</label>
-				<input class="input" type="text" name="nome" id="nome"/>
+				<input class="input" type="text" name="nome" id="nome" value="<%= cliente.nome %>"/>
 			</div>
 			<div class="field">
 				<label for="Sobrenome" class="label" >Sobrenome</label>
-				<input class="input" type="text" name="sobrenome" id="Sobrenome"/>
+				<input class="input" type="text" name="sobrenome" id="Sobrenome" value="<%= cliente.sobrenome %>" />
+			</div>
+			<div class="field">
+				<label for="data" class="label">Nascimento</label>
+				<input class="input" type="date" name="dt_nascimento" id="data" value="<%= cliente.dt_nascimento %>" />
 			</div>
 			<div class="field">
 				<label for="CEP" class="label" >CEP</label>
-				<input class="input" type="number" name="cep" id="CEP"/>
+				<input class="input" type="number" name="cep" id="CEP" value="<%= cliente.cep %>" />
 			</div>
 			<div class="field">
 				<label for="Endereço" class="label" >Endereço</label>
-				<input class="input" type="text" name="endereco" id="Endereço"/>
+				<input class="input" type="text" name="endereco" id="Endereço" value="<%= cliente.endereco %>" />
 			</div>
 			<div class="field">
 				<label for="CPF" class="label">CPF</label>
-				<input class="input" type="text" name="cpf" id="CPF" />
+				<input class="input" type="text" name="cpf" id="CPF" value="<%= cliente.cpf %>" />
 			</div>
 			<div>
 				<input class="button is-primary" type="submit" value="Cadastrar" />

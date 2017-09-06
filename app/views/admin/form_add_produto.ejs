@@ -3,14 +3,21 @@
 <section class="section">
 	<div class="container is-fluid">
 		<h2 class="title is-2">Add Produtos</h2>
+		<% if(validacao) { %>
+			<ul>
+				<% for (var i = 0; i < validacao.length; i++) { %>
+					<li><%= validacao[i].msg  %></li>
+				<% } %>
+			</ul>
+		<% } %>
 		<form method="post" action="/produtos/salvar">
 			<div class="field">
 				<label for="nome" class="label" >Nome</label>
-				<input class="input" type="text" name="nome" id="nome"/>
+				<input class="input" type="text" name="nome" id="nome" value="<%= produto.nome %>" />
 			</div>
 			<div class="field">
 				<label for="descrição" class="label">Descrição</label>
-				<input class="input" type="text" name="descricao" id="descrição" />
+				<input class="input" type="text" name="descricao" id="descrição" value="<%= produto.descricao %>" />
 			</div>
 			<div>
 				<input class="button is-primary" type="submit" value="Cadastrar" />
