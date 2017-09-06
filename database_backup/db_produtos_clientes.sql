@@ -25,10 +25,11 @@ DROP TABLE IF EXISTS `clientes`;
 CREATE TABLE `clientes` (
   `id_clientes` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) DEFAULT NULL,
-  `sobrenome` varchar(45) DEFAULT NULL,
-  `cep` int(11) DEFAULT NULL,
-  `endereco` varchar(45) DEFAULT NULL,
+  `sobrenome` varchar(225) DEFAULT NULL,
+  `cep` int(8) DEFAULT NULL,
+  `endereco` varchar(225) DEFAULT NULL,
   `cpf` varchar(11) DEFAULT NULL,
+  `dt_nascimento` date DEFAULT NULL,
   PRIMARY KEY (`id_clientes`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -39,7 +40,7 @@ CREATE TABLE `clientes` (
 
 LOCK TABLES `clientes` WRITE;
 /*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
-INSERT INTO `clientes` VALUES (1,'Gustavo','Torrente',12282110,'R. Professor','3156421146'),(2,'Batuta','Costa',5417060,'R. Mais Legal','21224587472'),(3,'Rafel','Finoto',5417054,'R. Pirituba','55214810601'),(4,'Renato','Massa',5817056,'R. do Sucesso','71333870345'),(5,'Rene','Farias',5820160,'R. do Amigo','71333870345');
+INSERT INTO `clientes` VALUES (1,'Gustavo','Torrente',12282110,'R. Professor','3156421146',NULL),(2,'Batuta','Costa',5417060,'R. Mais Legal','21224587472',NULL),(3,'Rafel','Finoto',5417054,'R. Pirituba','55214810601',NULL),(4,'Renato','Massa',5817056,'R. do Sucesso','71333870345',NULL),(5,'Rene','Farias',5820160,'R. do Amigo','71333870345',NULL);
 /*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-08-11  8:54:34
+-- Dump completed on 2017-09-06  9:36:17
