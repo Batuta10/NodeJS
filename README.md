@@ -4,12 +4,13 @@
 
 Application in NodeJS with:
 
+- [MySQL](https://www.mysql.com/products/workbench/)
 - [Express](http://expressjs.com/)
 - [Consign](https://www.npmjs.com/package/consign)
-- [BodyParser](https://www.npmjs.com/package/body-parser-json)
+- [Body Parser](https://www.npmjs.com/package/body-parser-json)
+- [Express Validator](https://www.npmjs.com/package/express-validation)
 
 - [Nodemon](https://nodemon.io/)
-- [MySQL](https://www.mysql.com/products/workbench/)
 
 ## Me
 My name is **Gabriel Costa**, from **Brazil**, this is my application that was developed in the classes of my university.
